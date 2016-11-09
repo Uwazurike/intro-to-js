@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript part 2 </title>
+	<script type="text/javascript">
+	var hello = 'Hello World';
+	var somNum = '1492';
+	var today = new Date("11/8/2016");
+	var pFirst = '$';
+	var pSecond = 5.45;
+	var price = pFirst + pSecond;
+	var letter = 'x';
+	var books = ["Art Of War", "Count Of Monte Cristo", "48 Laws Of Power"];
+	var dogAtHome = true;
+
+	function writeStrings() {
+			document.write(hello + '<br/>');
+			document.write('<br/>');
+			document.write('Columbus Sailed The World in ' + somNum + '<br/>');
+			document.write('<br/>');
+			document.write('It is ' + dogAtHome +' that I have a dog at home' + '<br/>');
+			document.write('<br/>');
+			document.write('Today is ' + today + '<br/>');
+			document.write('<br/>');
+			document.write('I spent ' + price + ' on a cheeseburger' + '<br/>');
+			document.write('<br/>');
+			document.write(letter + ' marks the spot' + '<br/>');
+			document.write('<br/>');
+		};
+	
+	function arrayOfBooks () {
+			for (var i = 0; i < books.length; i++) {
+  		document.write(books[i] + '<br/>');
+  	}
+  };
+	function addToArrayOfBooks () {
+	books.push("Clean Code");
+			for (var i = 0; i < books.length; i++) {
+  		document.write(books[i] + '<br/>');
+  	}
+  };
+	function removeFromArrayOfBooks() {
+	books.pop("Machine Learning");
+			for (var i = 0; i < books.length; i++) {
+				document.write(books[i] + '<br/>');
+  	}	
+  };
+                      
+	</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+   writeStrings();
+   document.write('<br/>');
+   arrayOfBooks ();
+   document.write('<br/>');
+   addToArrayOfBooks ();
+   document.write('<br/>');
+   removeFromArrayOfBooks();
+   document.write('<br/>');
+
+</script>
+
+  </body>
+
+  </html>
